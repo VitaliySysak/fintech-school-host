@@ -1,0 +1,81 @@
+.footer {
+  background-color: var(--bg-black);
+  color: white;
+  text-align: center;
+  padding: 0 6% 0 6%;
+  height: 250px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 0 ;
+}
+
+.right-section .info {
+  font-size: 15px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.right-section p.address {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.footer-bottom {
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  padding-bottom: 20px;
+  font-family: 'Krona One', sans-serif;
+}
+
+.footer-bottom p span {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  .right-section p {
+   font-size: 12px;
+  }
+
+  .right-section p.address {
+    font-size: 8px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+
+  .footer {
+    height: 180px;
+  }
+}
+
+/* Laptops (769px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    height: 200px;
+  }
+
+}
+
+/* Desktops (1025px and up) */
+@media (min-width: 1025px) {
+  .right-section p {
+    font-size: 24px;
+  }
+
+  .right-section p.address {
+    font-size: 16px;
+  }
+
+  .footer-bottom p {
+    font-size: 20px;
+  }
+}

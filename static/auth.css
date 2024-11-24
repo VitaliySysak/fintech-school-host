@@ -1,0 +1,316 @@
+.login-bg-image {
+    background-image: url("../static/public/login-bg.png");
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.auth-container {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+
+.auth-card-container {
+    margin-top: 10px;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg-white);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 4% 0 4%;
+}
+
+.card-content-container {
+    width: 100%;
+}
+
+.auth-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.auth-button {
+    width: 100%;
+    background-color: var(--bg-orange);
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); 
+    color: var(--font-white);
+    height: 60px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.4vw;
+    margin-bottom: 30px;
+}
+
+.account-options {
+    color: var(--font-black);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.login-input {
+    border-radius: 40px;
+    border-color: var(--font-black);
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.auth-options > label > input {
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 12px;
+}
+
+.auth-options > label {
+    font-size: 1vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.auth-options > label > input:checked {
+    background-color: var(--bg-orange); 
+}
+
+.auth-options > label > input:checked::after {
+    content: '✓';
+    color: black !important;
+    position: absolute;
+    top: 0;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+}
+
+.auth-title-container {
+    margin-top: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4% 0 4%;
+}
+
+.auth-title-container h1 {
+    color: var(--font-yellow);
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 600;
+}
+
+.name-surname-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-surname-block {
+    width: 46%;
+}
+
+.register-bg-image {
+    background-image: url("../static/public/register-bg.png");
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register-input {   
+    width: 100%;
+    border-radius: 40px;
+    border-color: var(--font-black);
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+.label-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    .name-surname-container {
+        display: block;
+    }
+
+    .name-surname-block {
+        width: 100%;
+    }
+
+    .auth-container {
+        width: 100%;
+        height: 85vh;
+        display: block;
+    }
+    
+    .auth-title-container {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        padding: 0 4% 0 4%;
+    }
+
+    .auth-card-container {
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-white);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 0 8% 0 8%; 
+    }
+
+    .register-input {
+        border-radius: 12px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .login-input {
+        border-radius: 12px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .auth-button {
+        border-radius: 40px;
+        height: 30px;
+        font-size: 2.2vw;
+        margin-bottom: 15px;
+    }
+
+    .auth-options {
+        margin-bottom: 15px;
+    }
+
+    .account-options {
+        font-size: 2vw;
+    }
+
+    .auth-title-container h1 {
+        font-size: 4vw;
+    }
+
+    .label-title {
+        font-size: 3vw;
+    }
+
+    .auth-options > label {
+        font-size: 2vw;
+    }
+
+    .register-bg-image {
+        height: 115%;
+    }
+    
+    .login-bg-image {
+        height: 110%;
+    }
+
+    .auth-options > label > input:checked::after {
+        top: 30%;
+        left: 55%;
+        font-size: 3.5vw;
+    }
+}
+
+/* Laptops (769px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .register-input {
+        border-radius: 40px;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .register-input {
+        border-radius: 40px;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .auth-button {
+        border-radius: 40px;
+        height: 40px;
+        font-size: 1.2vw;
+        margin-bottom: 15px;
+    }
+
+    .auth-options {
+        margin-bottom: 15px;
+    }
+
+    .account-options {
+        font-size: 1vw;
+    }
+
+    .auth-container {
+        height: 75vh;
+    }
+
+    .auth-title-container h1 {
+        font-size: 3.5vw;
+    }
+
+    .label-title {
+        font-size: 1.4vw;
+    }
+
+    .auth-options > label > input:checked::after {
+        top: 30%;
+        left: 60%;
+    }
+}
+
+/* Desktops (1025px and up) */
+@media (min-width: 1024px) and (max-width: 1550px) {
+    .register-input {
+        border-radius: 40px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .auth-button {
+        border-radius: 40px;
+        height: 50px;
+        font-size: 1.4vw;
+        margin-bottom: 30px;
+    }
+
+    .auth-options {
+        margin-bottom: 20px;
+    }
+
+    .account-options {
+        font-size: 1.1vw;
+    }
+
+    .auth-options > label > input:checked::after {
+        top: 20%;
+        left: 65%;
+    }
+}  
