@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    {% block styles %} {{ bootstrap.load_css() }} {% endblock %}
+    <link rel="icon" href="../static/public/fintech-school.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/header.css" />
+    <link rel="stylesheet" href="../static/footer.css" />
+    <link rel="stylesheet" href="../static/home.css" />
+    <link rel="stylesheet" href="../static/course.css" />
+    <link rel="stylesheet" href="../static/admin.css" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/auth.css" />
+    <title>Fintech School</title>
+  </head>
+  <body>
+    <div class="center-content">
+      <header class="header d-flex justify-content-between align-items-center">
+        <h1 class="logo-title">FINTECH<br />SCHOOL</h1>
+        <ul class="nav-bar d-flex justify-content-between list-unstyled">
+          <li><a href="{{ url_for('home') }}" class="nav-element">HOME</a></li>
+          <li><a href="{{ url_for('course') }}" class="nav-element">ABOUT COURSE</a></li>
+          {% if current_user.isAdmin %}
+            <li><a href="{{ url_for('admin') }}" class="nav-element">ADMIN</a></li>
+          {% endif %}
+          {% if current_user.id %}
+            <li><a href="{{ url_for('logout') }}" class="nav-element">LOG OUT</a></li>
+          {% else %}
+            <li><a href="{{ url_for('login') }}" class="nav-element">LOG IN</a></li>
+            <li><a href="{{ url_for('register') }}" class="nav-element">SIGN UP</a></li>
+          {% endif %}
+        </ul>
+      </header>

@@ -1,0 +1,334 @@
+{% include "header.html" %}
+
+<style>
+    .nav-element {
+        color: var(--white-text);
+    }
+
+    .logo-title {
+        color: var(--white-text);
+    }
+</style>
+
+    <div class="content-container">
+        <div class="head-container center-content-course">
+            <h1 class="head-title">Fintech School</h1>
+            <div class="head-sub-data left-text">
+                <p class="head-sub-data-p"><span class="head-sub-data-span">Спеціальність курсу:</span> фінанси, банківська
+                    справа, страхування та
+                    фондовий ринок</p>
+                <p class="head-sub-data-p"><span class="head-sub-data-span">Основа курсу:</span> міжнародні страндарти у
+                    сфері Open Banking, Fintech
+                    та DeFI</p>
+            </div>
+            <h1 class="head-where center-text">ОНЛАЙН ФОРМАТ НА ПЛАТФОРМІ “ZOOM”</h1>
+            <p class="head-when center-text">1 березня 2025 - 1 травня 2025</p>
+            <ul class="ul">
+                <li>Одна онлайн зустріч зі спікерами на тиждень</li>
+                <li>Шанс подискутувати з фахівцями практиками</li>
+                <li>Гнучкий графік виконання практичних кейсів онлайн</li>
+                <li>Записи відео-лекцій у Вашому електронному кабінеті</li>
+                <li>Практикуми на реальних кейсах фінтех компаній</li>
+                <li>Кращий міжнародний досвід на українському ринку</li>
+                <li>Сертифікати завершення курсу із цінними бонусами</li>
+            </ul>
+            <div class="link-btn-container">
+                <a href="https://www.youtube.com/playlist?list=PLhfEU0U19W5WRt6CVBPyhEfx00dDz_oBK" class="link-btn" target="_blank" rel="noopener noreferrer">
+                    <p>Трансляції і записи на <span class="link-btn-highlight">YouTube</span></p>
+                    <img src="../static/public/arrow.png" alt="arrow" />
+                </a>
+            
+                <a href="https://t.me/+04FE23yN3CU4NGYy" class="link-btn" target="_blank" rel="noopener noreferrer">
+                    <p><span class="link-btn-highlight">Telegram Channel</span> для комунікацій</p>
+                    <img src="../static/public/arrow.png" alt="arrow" />
+                </a>
+                
+            </div>
+            <div class="fintech-bg-gradient"></div>
+        </div>
+
+        <h2 class="course-structure">Структура курсу</h2>
+
+        <div class="course-container">
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 1. Вступ до Fintech</p>
+                <ul class="cource-list">
+                    <li>Що таке фінтех: суть та еволюція</li>
+                    <li>Важливість та вплив фінтехів на сферу фінансів</li>
+                    <li>Взаємозв’язок розвиту ІТ індустрії та фінансових технологій</li>
+                    <li>Ключові тренди та інновації у Fintech</li>
+                    <li>Що таке Fintech-рішення для фінансового бізнесу - платіжного, банківського, страхового, кредитного,
+                        валютного, інвестиційного</li>
+                    <li>Розвиток Fintech в Україні</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 1. Вступ до Fintech</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 2. Фінансові основи Fintech</p>
+                <ul class="cource-list">
+                    <li>Цифрові валюти центральних банків (CBDCs)</li>
+                    <li>Платіжні системи та інновації (Mobile Wallets, Instant Payments)</li>
+                    <li>Fintech у сфері міжнародних платежів</li>
+                    <li>Регуляторні платформи для електронних грошей та переказів</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 2. Фінансові основи Fintech</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 3. Blockchain для сфери фінансів</p>
+                <ul class="cource-list">
+                    <li>Що таке Blockchain?</li>
+                    <li>Чому Blockchain використовується для P2P транзакцій?</li>
+                    <li>Типи Blockchain</li>
+                    <li>Вигоди Blockchain</li>
+                    <li>Як Blockchain викоритовується у фінансовому секторі?</li>
+                    <li>Blockchain для цифрових валют центральних банків</li>
+                    <li>Огляд системи децентралізованих фінансів (DeFi) </li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 3. Blockchain для сфери фінансів</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 4. Екосистема Fintech</p>
+                <ul class="cource-list">
+                    <li>Розвиток Fintech стартапів</li>
+                    <li>Сучасні моделі взаємодії традиційних фінансів та Fintech</li>
+                    <li>Регуляторні виклики та можливості для Fintech</li>
+                    <li>Створення Fintech компаній</li>
+                    <li>Комплаєнс для сфери Fintech</li>
+                    <li>Особливості ліцензування Fintech компаній в різних юрисдикціях</li>
+                    <li>Роль офшорів для Fintech індустрії</li>
+                    <li>Огляд екосистем провідних фінтех-хабів світу</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div  class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 4. Екосистема Fintech</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 5. Цифрові платежі та перекази</p>
+                <ul class="cource-list">
+                    <li>Еволюція цифрових платежів</li>
+                    <li>Мобільні гаманці та платіжні системи</li>
+                    <li>Використання платіжних систем для електронного бізнесу</li>
+                    <li>Транскордонні платежі та грошові перекази</li>
+                    <li>Кореспондентські банківські рахунки та цифрові платежі</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 5. Цифрові платежі та перекази</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 6. Цифровий банкінг</p>
+                <ul class="cource-list">
+                    <li>Онлайн банкінг vs. традиційний банкінг</li>
+                    <li>Необанки та банки челленджери</li>
+                    <li>Ліцензування необанків</li>
+                    <li>Відкритий банкінг та інтеграція API</li>
+                    <li>Геополітичний аспект цифрового банкінгу</li>
+                    <li>Кейси про успішні цифрові банки світу</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 6. Цифровий банкінг</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 7. Технологія Blockchain та віртуальні активи</p>
+                <ul class="cource-list">
+                    <li>Що таке віртуальні активи?</li>
+                    <li>Види віртуальних активів</li>
+                    <li>Що таке криптовалюти?</li>
+                    <li>Blockchain та криптовалюти</li>
+                    <li>Біткоїн як перша децнтралізована криптовалюта</li>
+                    <li>Види криптовалют</li>
+                    <li>Що таке стейблкоїни?</li>
+                    <li>Як конвертувати криптовалюту у фіатні гроші?</li>
+                    <li>Як використовувати Proof of Stake для отримання пасивного доходу?</li>
+                    <li>Як оцінювати вартість криптовалюти?</li>
+                    <li>Як використовувати Coinmarketcap для аналізу криптовалюти</li>
+                    <li>Ризики та виклики криптоіндустрії</li>
+                    <li>Що таке White Paper для криптокомпанії і як його читати?</li>
+                    <li>Правила інвестування у віртуальні активи та криптовалюти</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 7. Технологія Blockchain та віртуальні активи</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 8. Персональні фінанси та Wealth Management</p>
+                <ul class="cource-list">
+                    <li>Роботизовані радники та автоматизовані інвестиційні платформи</li>
+                    <li>Застосунки для управління персональними фінансами</li>
+                    <li>Вплив штучного інтелекту та машинного навчання на управління власним добробутом</li>
+                    <li>Хто такі High-net-worth individuals (HNWIs) і як вони управляють своїм добробутом?</li>
+                    <li>Family Offices та їхні сервіси для управління персональними фінансами</li>
+                    <li>Юрисдикції та нормативно-правова основа діяльності Family Offices</li>
+                    <li>Кейси про Fintech рішення у сфері управління добробутом (Wealth Management)</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 8. Персональні фінанси та Wealth Management</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 9. Insurtech</p>
+                <ul class="cource-list">
+                    <li>Інновації у сфері страхування через застосування технологій</li>
+                    <li>Цифрові страхові платформи</li>
+                    <li>Андеррайтинг та автоматизація обробки претензій</li>
+                    <li>Кейси про Insurtech стартапи в Україні та світі</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div  class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 9. Insurtech</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 10. Regtech</p>
+                <ul class="cource-list">
+                    <li>Поняття та принципи регуляторних технологій</li>
+                    <li>Регуляторні пісочниці для Fintechs</li>
+                    <li>Автоматизація комплаєнсу та ризик-менеджменту</li>
+                    <li>поняття та принципи Know Your Customer (KYC) стандартів</li>
+                    <li>Know Your Customer (KYC) рішення для Fintech</li>
+                    <li>Кейси щодо Regtech імплементації у міжнародному досвіді</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div  class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 10. Regtech</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 11. Lending and Crowdfunding</p>
+                <ul class="cource-list">
+                    <li>Peer-to-Peer (P2P) кредитні платформи</li>
+                    <li>Oнлайн кредитні моделі та технології</li>
+                    <li>Краудфандингові платформи та принципи їх роботи</li>
+                    <li>Розвиток Краудфандингових платформ в Європі</li>
+                    <li>Регуляторні основи та кейси для краудфандингу</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div  class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 11. Lending and Crowdfunding</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="course-cell center-content-course left-text">
+                {% if current_user.id %}
+                <p class="cource-theme">Тема 12. AML Compliance для Fintech</p>
+                <ul class="cource-list">
+                    <li>Поняття AML Compliance для фінансових компаній</li>
+                    <li>Огляд нормативно-правових актів у сфері AML (Anti-Money Laundering)</li>
+                    <li>Вплив COVID-19 на цифровий банкінг і пов’язані з цим проблеми з AML комплаєнсом</li>
+                    <li>Вплив геополітичних подій, таких як конфлікт в Україні, на відповідність вимогам AML</li>
+                    <li>Роль технологій в AML комплаєнсі (AI and ML for AML Compliance; RPA for AML Operations; Data
+                        Visualization; DigitalIdentity Verification)</li>
+                    <li>Ключові виклики для Fintech компаній в AML Compliance</li>
+                    <li>AML Compliance та оцінка ризику країни при відкритті рахунків в банках та фінтехах</li>
+                    <li>Що таке компаєнс програма і для чого вона потрібна фінансовим компаніям</li>
+                </ul>
+                <br>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Практичне Case Study</a>
+                <a href="#" style="color: blueviolet; font-size: 1.2vw">Тестування</a>
+                {% else %}
+                <div  class="non-login-container">
+                    <img class="down-arrow" src="../static/public/content-arrow.png" alt="content-arrow">
+                    <p class="cource-theme">Тема 12. AML Compliance для Fintech</p>
+                </div>
+                {% endif %}
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div>
+                        <span id="closeModalBtn" class="close">&times;</span>
+                    </div>
+                    <p>Ця інформація доступна лише для зареєстрованих користувачів!</p>
+                    <div class="go-register-container">
+                        <a href="{{ url_for('register') }}" class="go-register">
+                            <p>Перейти до реєстрації</p>
+                            <img src="../static/public/arrow.png" alt="arrow" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% include "footer.html" %}

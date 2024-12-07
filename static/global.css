@@ -1,0 +1,41 @@
+:root {
+  --bg-black: #090711;
+  --bg-white: #fff;
+  --font-white: #fff;
+  --font-black: #000000;
+  --font-yellow: #FFED63;
+  --bg-orange: #FEBE28;
+  font-family: 'Krona One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+.center-content {
+  width: 100%;
+  padding: 0 6% 0 6%;
+}
+
+.logo-title {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .logo-title {
+    font-size: 0.8rem;
+  }
+  .center-content {
+    width: 100%;
+  }
+}
+
+/* Laptops (769px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-title {
+    font-size: 1rem;
+  }
+}
