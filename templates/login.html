@@ -1,0 +1,69 @@
+{% include "header.html" %}
+
+<style>
+  .nav-element {
+      color: var(--white-text);
+  }
+
+  .logo-title {
+      color: var(--font-yellow);
+  }
+
+  @media (max-width: 768px) {
+  .auth-card-container {
+    height: 45%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .auth-container {
+      display: flex;
+      align-items: center;
+    }
+    .auth-card-container {
+      height: 70%;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1550px) {
+    .auth-container {
+      display: flex;
+      align-items: center;
+    }
+    .auth-card-container {
+      margin-top: 10px;
+      width: 50%;
+      height: 80%;
+      background-color: var(--bg-white);
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      padding: 0 4% 0 4%;
+    }
+  }
+</style>
+    <div class="auth-container">
+      <div class="auth-card-container">
+        <form class="card-content-container" action="{{ url_for('login') }}" method="post" id="authForm">
+          {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+          <p class="text-center">{{ message }}</p>
+          {% endfor %} {% endif %} {% endwith %}
+          <h2 class="label-title">Логін</h2>
+          <input class="form-control login-input" type="login" name="login" required="required">
+          <h2 class="label-title">Пароль</h2>
+          <input class="form-control login-input" type="password" name="password" required="required">
+        
+        <div class="auth-options">
+          <label class="d-flex align-items-center"><input type="checkbox" value="remember-me" id="rememberMe"/> Remember Me</label>
+          <a class="account-options" href="">FORGOT PASSWORD?</a>
+        </div>
+        <button class="auth-button" type="submit">Log In</button>
+        <a class="account-options" href="{{ url_for('register') }}">Ще не маєш акаунту?</a>
+      </form>
+      </div>
+      <div class="auth-title-container ">
+        <h1>ПРОДОВЖУЙ СВІЙ КУРС</h1>
+      </div>
+    </div>
+  </div>
+<div class="login-bg-image"></div>

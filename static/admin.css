@@ -1,0 +1,69 @@
+.container {
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+  
+  .center {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 700px;
+  }
+  .user {
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+  }
+  
+  .admin-text {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .admin-date {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .history-block {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .history-container {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 700px;
+  }
+  
+  .history-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .trash {
+    width: 40px;
+    height: 40px;
+  }
+
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  
+}
+
+/* Laptops (769px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Desktops (1025px and up) */
+@media (min-width: 1025px) {
+
+}
