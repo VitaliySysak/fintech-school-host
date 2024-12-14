@@ -1,0 +1,57 @@
+  
+            <footer class="footer">
+                <div class="footer-content">
+                    <div>
+                        <h1 class="logo-title">FINTECH<br/>SCHOOL</h1>
+                    </div>
+                    <div class="right-section">
+                        <p>+380 96 955 099 5</p>
+                        <p>fintechschool2025@gmail.com</p>
+                        <p class="address">м. Львів, вул. Замарстинівська 83А</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 <span>Fintech School. Всі права захищені.</span></p>
+                </div>
+            </footer>
+        </div>
+        <script>
+            const openModalButtons  = document.querySelectorAll('.non-login-container');
+            const modal = document.getElementById('modal');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+
+            openModalButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                  modal.style.display = 'block';
+                });
+              });
+
+            closeModalBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            });
+            window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+            });
+
+            document.getElementById('authForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+              
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                const rememberMe = document.getElementById('rememberMe').checked;
+              
+                if (rememberMe) {
+                  localStorage.setItem('username', username);
+                  localStorage.setItem('password', password); 
+                } else {
+                  localStorage.removeItem('username');
+                  localStorage.removeItem('password');
+                }
+                alert('Form submitted');
+              });
+              
+        </script>
+    </body>
+</html>

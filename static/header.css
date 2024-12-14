@@ -1,0 +1,43 @@
+.header {
+  height: 80px;
+}
+
+.nav-bar {
+  width: 40%;
+}
+
+.nav-element {
+  text-decoration: none;
+  color: #090711;
+}
+
+.nav-element:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
+
+h1 {
+  margin-bottom: 0 !important;
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  .nav-bar {
+    width: 70%;
+  }
+
+  .nav-element {
+    font-size: 10px;
+  }
+}
+
+/* Laptops (769px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-bar {
+    width: 60%;
+  }
+}
+
